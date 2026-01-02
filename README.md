@@ -25,7 +25,7 @@ python -m src.reconcile \
 python -m scripts.validate_outputs --outdir out
 # 4) Open Excel report
 open out/recon_report.xlsx
-'
+```
 ## Outputs
 out/matched.csv
 
