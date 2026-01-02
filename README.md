@@ -1,12 +1,15 @@
+
 # Finance Ops Reconciliation Automation Demo (Synthetic Data Only)
+
 A simple, auditable finance-ops reconciliation demo using only synthetic data.
+
 ## What it does
 - Generates two synthetic CSV exports: a ledger export and a bank export
 - Cleans/standardizes fields (dates, currency strings, whitespace/case)
 - Matches transactions (exact match first, then a conservative fallback)
 - Outputs audit-friendly files + an Excel report
-## Quickstart (under 5 minutes)
 
+## Quickstart (under 5 minutes)
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
@@ -20,10 +23,14 @@ python -m src.reconcile \
   --outdir out
 # 3) Validate outputs
 python -m scripts.validate_outputs --outdir out
-# 4) Open Excel report (macOS)
+# 4) Open Excel report
 open out/recon_report.xlsx
+'
 ## Outputs
 out/matched.csv
+
 out/exceptions.csv
+
 out/summary.json
+
 out/recon_report.xlsx
